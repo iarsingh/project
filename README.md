@@ -63,7 +63,7 @@ NaukriSetu is a comprehensive platform connecting individuals with local and sta
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/naukrisetu.git
+git clone https://github.com/iarsingh/project.git naukrisetu
 cd naukrisetu
 ```
 
@@ -89,21 +89,21 @@ npm start
 
 ```
 naukrisetu/
-├── backend/                 # Spring Boot application
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/       # Java source files
-│   │   │   └── resources/  # Configuration files
-│   │   └── test/           # Test files
-│   └── pom.xml             # Maven dependencies
-├── frontend/               # React application
-│   ├── src/
-│   │   ├── components/     # React components
-│   │   ├── pages/         # Page components
-│   │   ├── services/      # API services
-│   │   └── utils/         # Utility functions
-│   └── package.json       # npm dependencies
-└── docs/                  # Documentation
+├── backend/                          # Spring Boot application (see backend/README.md)
+│   ├── src/main/java/com/naukrisetu/
+│   │   ├── controller/               # REST endpoints (auth, jobs, districts, documents, referrals, statistics, users)
+│   │   ├── model/                    # JPA entities (User, Job, District, Document, Referral, ChatSession, ...)
+│   │   ├── repository/                # Spring Data JPA repositories
+│   │   ├── security/                  # JWT auth filter/provider, UserDetails implementations
+│   │   └── config/                    # Security & app configuration
+│   ├── src/main/resources/           # application.properties, static config
+│   └── pom.xml                        # Maven dependencies
+└── frontend/                          # React + TypeScript application (see frontend/README.md)
+    ├── src/
+    │   ├── components/                # Shared UI (Layout, Navbar, ...)
+    │   ├── hooks/                     # useAuth and other hooks
+    │   └── pages/                     # Home, Login, Register, Profile, Documents, Jobs, NotFound
+    └── package.json                   # npm dependencies
 ```
 
 ## Contributing
