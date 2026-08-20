@@ -1,5 +1,9 @@
 # NaukriSetu - Hyperlocal Government Job Bridge App
 
+<!-- repository-summary -->
+A Spring Boot and React platform connecting users with hyperlocal government job opportunities and AI-powered assistance.
+<!-- /repository-summary -->
+
 NaukriSetu is a comprehensive platform connecting individuals with local and state-level government job opportunities. The platform features district-wise job listings, AI-powered assistance, and offline capabilities.
 
 ## Tech Stack
