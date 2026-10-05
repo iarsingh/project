@@ -1,5 +1,49 @@
 # NaukriSetu - Hyperlocal Government Job Bridge App
 
+<!-- project-guide:start -->
+## Project guide
+
+[Project architecture](PROJECT_ARCHITECTURE.md) · [Interview questions and answers](INTERVIEW_QA.md)
+
+Use the architecture document for the component diagram, implementation boundaries, and verification entry points. The interview guide includes source-backed answers and project walkthroughs.
+
+### Implementation map
+
+| Component | Responsibility |
+| --- | --- |
+| [`frontend/package.json`](frontend/package.json) | User interface code/assets |
+| [`backend/src/main/java/com/naukrisetu/controller/AuthController.java`](backend/src/main/java/com/naukrisetu/controller/AuthController.java) | HTTP request handling |
+| [`backend/src/main/java/com/naukrisetu/controller/DistrictController.java`](backend/src/main/java/com/naukrisetu/controller/DistrictController.java) | HTTP request handling |
+| [`backend/src/main/java/com/naukrisetu/controller/DocumentController.java`](backend/src/main/java/com/naukrisetu/controller/DocumentController.java) | HTTP request handling |
+| [`backend/src/main/java/com/naukrisetu/controller/JobApplicationController.java`](backend/src/main/java/com/naukrisetu/controller/JobApplicationController.java) | HTTP request handling |
+| [`backend/src/main/java/com/naukrisetu/controller/JobController.java`](backend/src/main/java/com/naukrisetu/controller/JobController.java) | HTTP request handling |
+| [`frontend/src/App.tsx`](frontend/src/App.tsx) | User interface code/assets |
+| [`frontend/src/index.tsx`](frontend/src/index.tsx) | User interface code/assets |
+| [`frontend/src/react-app-env.d.ts`](frontend/src/react-app-env.d.ts) | User interface code/assets |
+| [`frontend/src/reportWebVitals.ts`](frontend/src/reportWebVitals.ts) | User interface code/assets |
+| [`frontend/src/setupTests.ts`](frontend/src/setupTests.ts) | User interface code/assets |
+| [`frontend/src/components/Layout.tsx`](frontend/src/components/Layout.tsx) | User interface code/assets |
+| [`frontend/src/hooks/useAuth.tsx`](frontend/src/hooks/useAuth.tsx) | User interface code/assets |
+| [`frontend/src/pages/Documents.tsx`](frontend/src/pages/Documents.tsx) | User interface code/assets |
+| [`backend/pom.xml`](backend/pom.xml) | Implementation or supporting configuration |
+| [`frontend/src/App.test.tsx`](frontend/src/App.test.tsx) | Executable checks and regression examples |
+| [`README.md`](README.md) | Project explanations or operating notes |
+| [`backend/README.md`](backend/README.md) | Project explanations or operating notes |
+| [`frontend/README.md`](frontend/README.md) | User interface code/assets |
+
+### Local setup and verification
+
+From the repository root (the commands follow the checked-in manifests):
+
+```bash
+cd frontend
+npm install
+npm test
+npm run start
+```
+
+<!-- project-guide:end -->
+
 <!-- repository-summary -->
 A Spring Boot and React platform connecting users with hyperlocal government job opportunities and AI-powered assistance.
 <!-- /repository-summary -->
