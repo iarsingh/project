@@ -1,5 +1,12 @@
 # NaukriSetu - Hyperlocal Government Job Bridge App
 
+## Overview
+
+NaukriSetu is a Spring Boot and React app for finding district-level and state government job openings. The backend has REST controllers for authentication, jobs, districts, documents, job applications and referrals, with JPA entities stored in PostgreSQL and JWT-based Spring Security. The frontend uses React with Material-UI, Redux and React Router. The README's feature list also covers an AI career assistant, a vacancy tracker, a document manager and an offline mode.
+
+- **Built with:** Java, Spring Boot, Spring Security, Spring Data JPA, PostgreSQL, Maven, React, TypeScript, Material-UI, Redux
+- **Scope:** Personal full-stack project run locally; it is not a live production deployment.
+
 <!-- project-guide:start -->
 ## Project guide
 
